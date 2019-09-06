@@ -59,28 +59,28 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 2rem;
     border-right: 12px solid white; }
   .frame__top-left {
     top: 0;
     left: 0;
-    margin: 20px; }
+    margin: 2rem; }
   .frame__bottom-right {
     bottom: 0;
     right: 0;
-    margin: 20px;
+    margin: 2rem;
     transform: rotate(180deg); }
   .frame__bottom-left {
     bottom: 0;
     left: 0;
-    margin: 20px;
+    margin: 2rem;
     transform: rotate(270deg); }
   .frame__bottom-center {
     bottom: 0;
     position: fixed;
     left: 0;
     right: 0;
-    margin: 20px;
+    margin: 0.5rem;
     text-align: center;
     color: white;
     font-family: "Montserrat", sans-serif; }
@@ -118,6 +118,30 @@ body {
     color: purple;
     transform: translateX(1rem); }
 
+.social__list-item {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 100%;
+  line-height: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .social__list-item--link:link, .social__list-item--link:visited {
+    text-decoration: none;
+    color: purple; }
+  .social__list-item--link:hover, .social__list-item--link:active {
+    color: aqua; }
+  .social__list-item--icon {
+    font-size: 2rem;
+    line-height: inherit; }
+
+.nav {
+  z-index: 100;
+  position: fixed; }
+
 .page__home {
   background-image: url("../images/homebg.png");
   background-size: cover;
@@ -125,10 +149,7 @@ body {
   width: 100vw; }
 
 .home {
-  position: relative;
-  top: 15%;
-  left: 20%;
-  width: 20%; }
+  padding: 5rem 5rem; }
   .home__header {
     color: white; }
     .home__header-main {

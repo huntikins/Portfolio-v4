@@ -25,24 +25,24 @@
     position: fixed;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 2rem;
     border-right: 12px solid white;
   }
   &__top-left {
     top: 0;
     left: 0;
-    margin: 20px;
+    margin: 2rem;
   }
   &__bottom-right {
     bottom: 0;
     right: 0;
-    margin: 20px;
+    margin: 2rem;
     transform: rotate(180deg);
   }
   &__bottom-left {
     bottom: 0;
     left: 0;
-    margin: 20px;
+    margin: 2rem;
     transform: rotate(270deg);
   }
   &__bottom-center {
@@ -50,7 +50,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    margin: 20px;
+    margin: 0.5rem;
     text-align: center;
     color: white;
     font-family: $body-font;
@@ -103,4 +103,39 @@
       }
     }
   }
+}
+.social {
+  &__list {
+    &-item {
+      width: 4rem;
+      height: 4rem;
+      background-color: white;
+      border-radius: 100%;
+      line-height: 4rem;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      &--link {
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: purple;
+        }
+        &:hover,
+        &:active {
+          color: aqua;
+        }
+      }
+      &--icon {
+        font-size: 2rem;
+        line-height: inherit;
+      }
+    }
+  }
+}
+.nav {
+  z-index: 100;
+  position: fixed;
 }

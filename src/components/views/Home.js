@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../navigation/Menu";
+import Navigation from "../navigation/HomeMenu";
 import HomeHeader from "../headers/HomeHeader";
 
 class Home extends React.Component {
