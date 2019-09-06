@@ -1,0 +1,26 @@
+// adding a simple reset to the file since browsers no longer really need a full reset file anymore
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+// adding global relative sizing to simplify media queries later on using rem based on this percentage (default is 16px, 100% is 16, need 10px get 62.5%)
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

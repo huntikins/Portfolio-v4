@@ -1,0 +1,21 @@
+//abstracts
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//base
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+//components
+
+//layout
+@import "layout/navigation";
+
+//pages
+@import "pages/home.scss";
+
+//vendor
+@import "vendor/bootstrap";
