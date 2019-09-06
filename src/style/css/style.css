@@ -20,6 +20,18 @@ html {
 body {
   box-sizing: border-box; }
 
+.page__home {
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.page__about {
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -61,6 +73,18 @@ body {
     right: 0;
     margin: 2rem;
     border-right: 12px solid white; }
+  .frame__top-right--alt {
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    transform: rotate(90deg); }
+  .frame__top-center {
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0.5rem;
+    text-align: center; }
   .frame__top-left {
     top: 0;
     left: 0;
@@ -118,6 +142,54 @@ body {
     color: purple;
     transform: translateX(1rem); }
 
+.topmenu__list {
+  margin: 1rem 8rem;
+  list-style-type: none; }
+
+.topmenu__list-item {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 60rem;
+  font-size: 2rem;
+  font-family: "Questrial", sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+  letter-spacing: 0.5rem; }
+  .topmenu__list-item--link:link, .topmenu__list-item--link:visited {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 320%;
+    transition: all 0.5s; }
+    .topmenu__list-item--link:link span, .topmenu__list-item--link:visited span {
+      margin-right: 1.5rem;
+      display: inline-block; }
+  .topmenu__list-item--link:hover, .topmenu__list-item--link:active {
+    background-position: 100%;
+    color: purple;
+    transform: translateX(1rem); }
+  .topmenu__list-item--image {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 2rem; }
+
+.topmenu__left {
+  float: left; }
+
+.topmenu__right {
+  float: right; }
+
+.topmenu__center {
+  float: none; }
+
 .social__list-item {
   width: 4rem;
   height: 4rem;
@@ -143,12 +215,6 @@ body {
 .nav {
   z-index: 100;
   position: fixed; }
-
-.page__home {
-  background-image: url("../images/homebg.png");
-  background-size: cover;
-  height: 100vh;
-  width: 100vw; }
 
 .home {
   padding: 5rem 5rem;

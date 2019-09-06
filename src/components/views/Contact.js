@@ -1,7 +1,9 @@
 import React from "react";
 
-export default class Contact extends React.Component {
+class Contact extends React.Component {
   render() {
-    return <p>lorem</p>;
+    return <p>Contact</p>;
   }
 }
+
+export default Contact;

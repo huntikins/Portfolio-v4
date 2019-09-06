@@ -1,7 +1,9 @@
 import React from "react";
 
-export default class Main extends React.Component {
+class Portfolio extends React.Component {
   render() {
-    return <p>lorem</p>;
+    return <p>Portfolio</p>;
   }
 }
+
+export default Portfolio;

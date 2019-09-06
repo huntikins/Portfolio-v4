@@ -1,51 +1,47 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class HomeMenu extends Component {
+class InternalMenu extends Component {
   render() {
     return (
       <nav className="nav">
         <div className="frame frame__top-left"></div>
         <div className="frame frame__bottom-left"></div>
         <div className="frame frame__bottom-right"></div>
-        <ul className="menu__list frame__top-right">
-          <li className="menu__list-item">
-            <Link
-              to="/about"
-              className="menu__list-item--link"
-              href="/about.html"
-            >
-              About
-            </Link>
-          </li>
-          <li className="menu__list-item">
-            <Link
-              to="/portfolio"
-              className="menu__list-item--link"
-              href="/portfolio.html"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li className="menu__list-item">
-            <Link
-              to="/blog"
-              className="menu__list-item--link"
-              href="/blog.html"
-            >
-              Blog
-            </Link>
-          </li>
-          <li className="menu__list-item">
-            <Link
-              to="/contact"
-              className="menu__list-item--link"
-              href="/contact.html"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="frame frame__top-right--alt"></div>
+        <div className="frame__top-center">
+          <ul className="topmenu__list">
+            <li className="topmenu__list-item topmenu__left">
+              <Link to="/about" className="topmenu__list-item--link">
+                About
+              </Link>
+            </li>
+            <li className="topmenu__list-item topmenu__left">
+              <Link to="/contact" className="topmenu__list-item--link">
+                Contact
+              </Link>
+            </li>
+            <li className="topmenu__list-item topmenu__center">
+              <Link to="/" className="topmenu__list-item">
+                <img
+                  className="img-responsive topmenu__list-item--image"
+                  src="logo.png"
+                  alt="..."
+                />
+              </Link>
+            </li>
+            <li className="topmenu__list-item topmenu__right">
+              <Link to="/portfolio" className="topmenu__list-item--link">
+                Projects
+              </Link>
+            </li>
+            <li className="topmenu__list-item topmenu__right">
+              <Link to="/blog" className="topmenu__list-item--link">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="frame__bottom-center">
           <ul className="social__list">
             <li className="social__list-item">
@@ -95,4 +91,4 @@ class HomeMenu extends Component {
   }
 }
 
-export default HomeMenu;
+export default InternalMenu;

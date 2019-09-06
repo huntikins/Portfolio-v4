@@ -1,7 +1,14 @@
 import React from "react";
+import Navigation from "../navigation/InternalMenu";
 
-export default class Main extends React.Component {
+class About extends React.Component {
   render() {
-    return <p>lorem</p>;
+    return (
+      <div className="page__about">
+        <Navigation />
+      </div>
+    );
   }
 }
+
+export default About;
