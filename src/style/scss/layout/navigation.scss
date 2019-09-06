@@ -117,15 +117,16 @@
       display: inline-block;
       margin-left: 1rem;
       margin-right: 1rem;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+        background-color: rgba($color: white, $alpha: 0.8);
+      }
       &--link {
         &:link,
         &:visited {
           text-decoration: none;
           color: purple;
-        }
-        &:hover,
-        &:active {
-          color: aqua;
         }
       }
       &--icon {

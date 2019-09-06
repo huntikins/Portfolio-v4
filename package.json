@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cssinit": "node-sass src/style/scss/main.scss src/style/css/style.css -w",
-    "start": "react-scripts start && cssinit",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
