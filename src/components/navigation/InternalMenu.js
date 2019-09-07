@@ -66,12 +66,12 @@ class InternalMenu extends Component {
             </li>
             <li className="social__list-item">
               <a
-                href="https://www.instagram.com/_otaku_princess/"
+                href="https://codepen.io/huntertrammell"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social__list-item--link"
               >
-                <i className="fab fa-instagram social__list-item--icon"></i>
+                <i className="fab fa-codepen social__list-item--icon"></i>
               </a>
             </li>
             <li className="social__list-item">

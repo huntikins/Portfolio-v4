@@ -21,16 +21,85 @@ body {
   box-sizing: border-box; }
 
 .page__home {
+  position: relative;
   background-image: url("../images/homebg.png");
   background-size: cover;
   height: 100vh;
   width: 100vw; }
 
 .page__about {
+  position: relative;
   background-image: url("../images/homebg.png");
   background-size: cover;
   height: 100vh;
   width: 100vw; }
+
+.page__contact {
+  position: relative;
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.page__admin {
+  position: relative;
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.page__projects {
+  position: relative;
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.page__blog {
+  position: relative;
+  background-image: url("../images/homebg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.content__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85vh;
+  width: 93vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2.5rem 4rem;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  .content__wrapper::-webkit-scrollbar {
+    width: 1.25rem; }
+  .content__wrapper::-webkit-scrollbar-track-piece {
+    background: transparent;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    margin: 5rem; }
+  .content__wrapper::-webkit-scrollbar-thumb {
+    background-color: white;
+    height: 5rem;
+    width: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .content__wrapper {
+      height: 93vh;
+      width: 91vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .content__wrapper {
+      height: 90vh !important;
+      width: 83vw !important; } }
+  @media only screen and (max-width: 25em) {
+    .content__wrapper {
+      height: 90vh !important;
+      width: 83vw !important; } }
+  @media only screen and (max-width: 20em) {
+    .content__wrapper {
+      height: 80vh !important;
+      width: 81vw !important; } }
 
 @keyframes moveInLeft {
   0% {
@@ -143,15 +212,20 @@ body {
     transform: translateX(1rem); }
 
 .topmenu__list {
-  margin: 1rem 8rem;
+  margin: 0rem 8rem;
   list-style-type: none; }
+  @media only screen and (max-width: 37.5em) {
+    .topmenu__list {
+      margin: 1rem 8rem; } }
+  @media only screen and (max-width: 20em) {
+    .topmenu__list {
+      margin: 3.5rem 4rem; } }
 
 .topmenu__list-item {
   text-align: center;
   color: white;
   text-decoration: none;
   font-weight: 60rem;
-  font-size: 2rem;
   font-family: "Questrial", sans-serif;
   vertical-align: middle;
   display: inline-block;
@@ -160,7 +234,7 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     padding: 1rem 1rem;
     color: white;
@@ -172,14 +246,34 @@ body {
     .topmenu__list-item--link:link span, .topmenu__list-item--link:visited span {
       margin-right: 1.5rem;
       display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .topmenu__list-item--link:link, .topmenu__list-item--link:visited {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .topmenu__list-item--link:link, .topmenu__list-item--link:visited {
+        font-size: 0.75rem;
+        margin: 0;
+        padding: 0.5rem; } }
   .topmenu__list-item--link:hover, .topmenu__list-item--link:active {
     background-position: 100%;
     color: purple;
     transform: translateX(1rem); }
   .topmenu__list-item--image {
-    height: 5rem;
-    width: 5rem;
-    margin-top: 2rem; }
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .topmenu__list-item--image {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 0; } }
+    @media only screen and (max-width: 25em) {
+      .topmenu__list-item--image {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 0.5rem; } }
 
 .topmenu__left {
   float: left; }

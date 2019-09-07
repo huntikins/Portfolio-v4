@@ -1,8 +1,13 @@
 import React from "react";
+import Navigation from "../navigation/InternalMenu";
 
 class Portfolio extends React.Component {
   render() {
-    return <p>Portfolio</p>;
+    return (
+      <div className="page__projects">
+        <Navigation />
+      </div>
+    );
   }
 }
 

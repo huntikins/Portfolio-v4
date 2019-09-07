@@ -1,8 +1,13 @@
 import React from "react";
+import Navigation from "../navigation/InternalMenu";
 
 class Contact extends React.Component {
   render() {
-    return <p>Contact</p>;
+    return (
+      <div className="page__contact">
+        <Navigation />
+      </div>
+    );
   }
 }
 

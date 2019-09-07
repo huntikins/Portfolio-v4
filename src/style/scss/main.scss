@@ -10,12 +10,14 @@
 @import "base/animations";
 
 //components
+@import "components/form.scss";
 
 //layout
 @import "layout/navigation";
 
 //pages
 @import "pages/home.scss";
+@import "pages/contact.scss";
 
 //vendor
 @import "vendor/bootstrap";
