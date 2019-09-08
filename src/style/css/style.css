@@ -129,6 +129,199 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+.skill__list {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  background-color: white;
+  margin: 4rem auto;
+  border: solid 1rem white;
+  position: relative;
+  z-index: 1; }
+  .skill__list > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6rem;
+    height: 6rem;
+    margin: -3rem; }
+    .skill__list > *:nth-of-type(1) {
+      transform: rotate(0deg) translate(20rem) rotate(0deg); }
+    .skill__list > *:nth-of-type(2) {
+      transform: rotate(25.71429deg) translate(20rem) rotate(-25.71429deg); }
+    .skill__list > *:nth-of-type(3) {
+      transform: rotate(51.42857deg) translate(20rem) rotate(-51.42857deg); }
+    .skill__list > *:nth-of-type(4) {
+      transform: rotate(77.14286deg) translate(20rem) rotate(-77.14286deg); }
+    .skill__list > *:nth-of-type(5) {
+      transform: rotate(102.85714deg) translate(20rem) rotate(-102.85714deg); }
+    .skill__list > *:nth-of-type(6) {
+      transform: rotate(128.57143deg) translate(20rem) rotate(-128.57143deg); }
+    .skill__list > *:nth-of-type(7) {
+      transform: rotate(154.28571deg) translate(20rem) rotate(-154.28571deg); }
+    .skill__list > *:nth-of-type(8) {
+      transform: rotate(180deg) translate(20rem) rotate(-180deg); }
+    .skill__list > *:nth-of-type(9) {
+      transform: rotate(205.71429deg) translate(20rem) rotate(-205.71429deg); }
+    .skill__list > *:nth-of-type(10) {
+      transform: rotate(231.42857deg) translate(20rem) rotate(-231.42857deg); }
+    .skill__list > *:nth-of-type(11) {
+      transform: rotate(257.14286deg) translate(20rem) rotate(-257.14286deg); }
+    .skill__list > *:nth-of-type(12) {
+      transform: rotate(282.85714deg) translate(20rem) rotate(-282.85714deg); }
+    .skill__list > *:nth-of-type(13) {
+      transform: rotate(308.57143deg) translate(20rem) rotate(-308.57143deg); }
+    .skill__list > *:nth-of-type(14) {
+      transform: rotate(334.28571deg) translate(20rem) rotate(-334.28571deg); }
+  .skill__list-item {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    line-height: 5.5rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: transform 0.75s ease-in-out;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2; }
+    .skill__list-item:focus {
+      transform: scale(2) translateY(-5rem);
+      outline: 0px solid transparent; }
+    .skill__list-item--aws {
+      border: solid 0.5rem #ff9900; }
+    .skill__list-item--html5 {
+      border: solid 0.5rem #e44d26; }
+    .skill__list-item--react {
+      border: solid 0.5rem #61dbfb; }
+    .skill__list-item--git {
+      border: solid 0.5rem #f1502f; }
+    .skill__list-item--node {
+      border: solid 0.5rem #68a063; }
+    .skill__list-item--css3 {
+      border: solid 0.5rem #3c99dc; }
+    .skill__list-item--mongodb {
+      border: solid 0.5rem #4db33d; }
+    .skill__list-item--sql {
+      border: solid 0.5rem #f29111; }
+    .skill__list-item--js {
+      border: solid 0.5rem #f0db4f; }
+    .skill__list-item--wpress {
+      border: solid 0.5rem #00749c; }
+    .skill__list-item--php {
+      border: solid 0.5rem #787cb5; }
+    .skill__list-item--vuejs {
+      border: solid 0.5rem #41b883; }
+    .skill__list-item--sass {
+      border: solid 0.5rem #cd6799; }
+    .skill__list-item--adobe {
+      border: solid 0.5rem #ed2224; }
+    .skill__list-item--icon {
+      font-size: 3rem;
+      line-height: inherit; }
+  .skill__list-info {
+    /* container for description */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+    z-index: 0;
+    padding-top: 42%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(128, 0, 128, 0.75); }
+  .skill__list-header {
+    /* technology type */ }
+  .skill__list-proficiency {
+    /* wrapper for competency bar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 2.5rem;
+    display: inline-block;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0.5rem solid white; }
+    .skill__list-proficiency--level {
+      /* will change width based on competency */
+      background-color: purple;
+      width: 75%;
+      height: 1.5rem;
+      border-radius: 2.5rem;
+      display: block; }
+  .skill__list-certification {
+    /*container to hold certification icons/links*/
+    list-style: none;
+    text-align: center;
+    margin-top: 6rem; }
+    .skill__list-certification--item {
+      /*individual certification icon/link this is a li that will hold all certifications etc if any */
+      border-radius: 2.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background-color: white;
+      color: purple;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+
+.fa-html5 {
+  color: #e44d26; }
+
+.fa-react {
+  color: #61dbfb; }
+
+.fa-git {
+  color: #f1502f; }
+
+.fa-aws {
+  color: #ff9900; }
+
+.fa-node {
+  color: #68a063; }
+
+.fa-css3-alt {
+  color: #3c99dc; }
+
+.fa-server {
+  color: #4db33d; }
+
+.fa-database {
+  color: #f29111; }
+
+.fa-js {
+  color: #f0db4f; }
+
+.fa-wordpress-simple {
+  color: #00749c; }
+
+.fa-php {
+  color: #787cb5; }
+
+.fa-vuejs {
+  color: #41b883; }
+
+.fa-sass {
+  color: #cd6799; }
+
+.fa-adobe {
+  color: #ed2224; }
+
 .frame {
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 100% 25%, 100% 100%, 100% 0%);
   clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 100% 25%, 100% 100%, 100% 0%);
@@ -335,6 +528,14 @@ body {
     height: 20rem;
     width: 20rem; }
 
+/*&:before {
+      content: "";
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+    }*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

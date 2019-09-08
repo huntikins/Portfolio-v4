@@ -1,0 +1,170 @@
+.skill__list {
+  @include on-circle($item-count: 14, $circle-size: 40rem, $item-size: 6rem);
+  margin: 4rem auto;
+  border: solid 1rem white;
+  position: relative;
+  z-index: 1;
+  &-item {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    line-height: 5.5rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: transform 0.75s ease-in-out;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+    &:focus {
+      transform: scale(2) translateY(-5rem);
+      outline: 0px solid transparent;
+    }
+    &--aws {
+      border: solid 0.5rem #ff9900;
+    }
+    &--html5 {
+      border: solid 0.5rem #e44d26;
+    }
+    &--react {
+      border: solid 0.5rem #61dbfb;
+    }
+    &--git {
+      border: solid 0.5rem #f1502f;
+    }
+    &--node {
+      border: solid 0.5rem #68a063;
+    }
+    &--css3 {
+      border: solid 0.5rem #3c99dc;
+    }
+    &--mongodb {
+      border: solid 0.5rem #4db33d;
+    }
+    &--sql {
+      border: solid 0.5rem #f29111;
+    }
+    &--js {
+      border: solid 0.5rem #f0db4f;
+    }
+    &--wpress {
+      border: solid 0.5rem #00749c;
+    }
+    &--php {
+      border: solid 0.5rem #787cb5;
+    }
+    &--vuejs {
+      border: solid 0.5rem #41b883;
+    }
+    &--sass {
+      border: solid 0.5rem #cd6799;
+    }
+    &--adobe {
+      border: solid 0.5rem #ed2224;
+    }
+    &--icon {
+      font-size: 3rem;
+      line-height: inherit;
+    }
+  }
+  &-info {
+    /* container for description */
+    @include absCenter;
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+    z-index: 0;
+    padding-top: 42%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba($color: purple, $alpha: 0.75);
+  }
+  &-header {
+    /* technology type */
+  }
+  &-proficiency {
+    /* wrapper for competency bar */
+    @include absCenter;
+    height: 2.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 2.5rem;
+    display: inline-block;
+    padding: 0;
+    background-color: rgba($color: white, $alpha: 0.6);
+    border: 0.5rem solid white;
+    &--level {
+      /* will change width based on competency */
+      background-color: purple;
+      width: 75%;
+      height: 1.5rem;
+      border-radius: 2.5rem;
+      display: block;
+    }
+  }
+  &-certification {
+    /*container to hold certification icons/links*/
+    list-style: none;
+    text-align: center;
+    margin-top: 6rem;
+    &--item {
+      /*individual certification icon/link this is a li that will hold all certifications etc if any */
+      border-radius: 2.5rem;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background-color: rgba($color: white, $alpha: 1);
+      color: purple;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+.fa {
+  &-html5 {
+    color: #e44d26;
+  }
+  &-react {
+    color: #61dbfb;
+  }
+  &-git {
+    color: #f1502f;
+  }
+  &-aws {
+    color: #ff9900;
+  }
+  &-node {
+    color: #68a063;
+  }
+  &-css3-alt {
+    color: #3c99dc;
+  }
+  &-server {
+    color: #4db33d;
+  }
+  &-database {
+    color: #f29111;
+  }
+  &-js {
+    color: #f0db4f;
+  }
+  &-wordpress-simple {
+    color: #00749c;
+  }
+  &-php {
+    color: #787cb5;
+  }
+  &-vuejs {
+    color: #41b883;
+  }
+  &-sass {
+    color: #cd6799;
+  }
+  &-adobe {
+    color: #ed2224;
+  }
+}
