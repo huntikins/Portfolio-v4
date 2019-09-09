@@ -1,0 +1,19 @@
+.blog {
+  &__coming-soon {
+    @include absCenter;
+    text-align: center;
+  }
+  &__header {
+    font-family: $header-font;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 3rem;
+  }
+  &__gatsby {
+    height: 10rem;
+    width: 10rem;
+  }
+}
