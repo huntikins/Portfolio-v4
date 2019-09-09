@@ -177,6 +177,14 @@ body {
       transform: rotate(308.57143deg) translate(20rem) rotate(-308.57143deg); }
     .skill__list > *:nth-of-type(14) {
       transform: rotate(334.28571deg) translate(20rem) rotate(-334.28571deg); }
+  .skill__list-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
   .skill__list-item {
     width: 6rem;
     height: 6rem;
@@ -189,6 +197,22 @@ body {
     border-radius: 50%;
     background-color: white;
     z-index: 2; }
+    .skill__list-item--image {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100%;
+      line-height: 5.5rem;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      transition: transform 0.75s ease-in-out;
+      border-radius: 50%;
+      background-color: white;
+      z-index: 2;
+      transform: scale(2) translateY(-5rem);
+      position: relative;
+      overflow: hidden;
+      border: solid 0.5rem purple; }
     .skill__list-item:focus {
       transform: scale(2) translateY(-5rem);
       outline: 0px solid transparent; }
@@ -238,7 +262,12 @@ body {
     margin: 0 auto;
     background-color: rgba(128, 0, 128, 0.75); }
   .skill__list-header {
-    /* technology type */ }
+    /* technology type */
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 600; }
   .skill__list-proficiency {
     /* wrapper for competency bar */
     position: absolute;
@@ -256,7 +285,6 @@ body {
     .skill__list-proficiency--level {
       /* will change width based on competency */
       background-color: purple;
-      width: 75%;
       height: 1.5rem;
       border-radius: 2.5rem;
       display: block; }
