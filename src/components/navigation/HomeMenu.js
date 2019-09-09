@@ -20,6 +20,15 @@ class HomeMenu extends Component {
           </li>
           <li className="menu__list-item">
             <Link
+              to="/contact"
+              className="menu__list-item--link"
+              href="/contact.html"
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="menu__list-item">
+            <Link
               to="/portfolio"
               className="menu__list-item--link"
               href="/portfolio.html"
@@ -34,15 +43,6 @@ class HomeMenu extends Component {
               href="/blog.html"
             >
               Blog
-            </Link>
-          </li>
-          <li className="menu__list-item">
-            <Link
-              to="/contact"
-              className="menu__list-item--link"
-              href="/contact.html"
-            >
-              Contact
             </Link>
           </li>
         </ul>

@@ -74,12 +74,14 @@ body {
   overflow-y: scroll;
   overflow-x: hidden; }
   .content__wrapper::-webkit-scrollbar {
-    width: 1.25rem; }
+    position: fixed;
+    width: 1.25rem;
+    z-index: 100; }
   .content__wrapper::-webkit-scrollbar-track-piece {
     background: transparent;
     border: 4px solid transparent;
     background-clip: content-box;
-    margin: 5rem; }
+    margin: 1rem; }
   .content__wrapper::-webkit-scrollbar-thumb {
     background-color: white;
     height: 5rem;
@@ -137,7 +139,7 @@ body {
   border-radius: 50%;
   list-style: none;
   background-color: white;
-  margin: 4rem auto;
+  margin: 2rem auto;
   border: solid 1rem white;
   position: relative;
   z-index: 1; }
@@ -177,6 +179,52 @@ body {
       transform: rotate(308.57143deg) translate(20rem) rotate(-308.57143deg); }
     .skill__list > *:nth-of-type(14) {
       transform: rotate(334.28571deg) translate(20rem) rotate(-334.28571deg); }
+  @media only screen and (max-width: 37.5em) {
+    .skill__list {
+      position: relative;
+      width: 30rem;
+      height: 30rem;
+      padding: 0;
+      border-radius: 50%;
+      list-style: none;
+      background-color: white;
+      border: solid 0.5rem white; }
+      .skill__list > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4rem;
+        height: 4rem;
+        margin: -2rem; }
+        .skill__list > *:nth-of-type(1) {
+          transform: rotate(0deg) translate(15rem) rotate(0deg); }
+        .skill__list > *:nth-of-type(2) {
+          transform: rotate(25.71429deg) translate(15rem) rotate(-25.71429deg); }
+        .skill__list > *:nth-of-type(3) {
+          transform: rotate(51.42857deg) translate(15rem) rotate(-51.42857deg); }
+        .skill__list > *:nth-of-type(4) {
+          transform: rotate(77.14286deg) translate(15rem) rotate(-77.14286deg); }
+        .skill__list > *:nth-of-type(5) {
+          transform: rotate(102.85714deg) translate(15rem) rotate(-102.85714deg); }
+        .skill__list > *:nth-of-type(6) {
+          transform: rotate(128.57143deg) translate(15rem) rotate(-128.57143deg); }
+        .skill__list > *:nth-of-type(7) {
+          transform: rotate(154.28571deg) translate(15rem) rotate(-154.28571deg); }
+        .skill__list > *:nth-of-type(8) {
+          transform: rotate(180deg) translate(15rem) rotate(-180deg); }
+        .skill__list > *:nth-of-type(9) {
+          transform: rotate(205.71429deg) translate(15rem) rotate(-205.71429deg); }
+        .skill__list > *:nth-of-type(10) {
+          transform: rotate(231.42857deg) translate(15rem) rotate(-231.42857deg); }
+        .skill__list > *:nth-of-type(11) {
+          transform: rotate(257.14286deg) translate(15rem) rotate(-257.14286deg); }
+        .skill__list > *:nth-of-type(12) {
+          transform: rotate(282.85714deg) translate(15rem) rotate(-282.85714deg); }
+        .skill__list > *:nth-of-type(13) {
+          transform: rotate(308.57143deg) translate(15rem) rotate(-308.57143deg); }
+        .skill__list > *:nth-of-type(14) {
+          transform: rotate(334.28571deg) translate(15rem) rotate(-334.28571deg); } }
   .skill__list-image {
     position: absolute;
     top: 50%;
@@ -197,6 +245,11 @@ body {
     border-radius: 50%;
     background-color: white;
     z-index: 2; }
+    @media only screen and (max-width: 37.5em) {
+      .skill__list-item {
+        width: 4rem;
+        height: 4rem;
+        line-height: 3rem; } }
     .skill__list-item--image {
       width: 6rem;
       height: 6rem;
@@ -213,9 +266,16 @@ body {
       position: relative;
       overflow: hidden;
       border: solid 0.5rem purple; }
+      @media only screen and (max-width: 37.5em) {
+        .skill__list-item--image {
+          width: 4rem;
+          height: 4rem; } }
     .skill__list-item:focus {
       transform: scale(2) translateY(-5rem);
       outline: 0px solid transparent; }
+      @media only screen and (max-width: 37.5em) {
+        .skill__list-item:focus {
+          transform: scale(2) translateY(-4.5rem); } }
     .skill__list-item--aws {
       border: solid 0.5rem #ff9900; }
     .skill__list-item--html5 {
@@ -247,6 +307,10 @@ body {
     .skill__list-item--icon {
       font-size: 3rem;
       line-height: inherit; }
+      @media only screen and (max-width: 37.5em) {
+        .skill__list-item--icon {
+          font-size: 1.5rem;
+          line-height: inherit; } }
   .skill__list-info {
     /* container for description */
     position: absolute;
@@ -264,10 +328,14 @@ body {
   .skill__list-header {
     /* technology type */
     color: white;
+    font-family: "Questrial", sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     font-weight: 600; }
+    @media only screen and (max-width: 37.5em) {
+      .skill__list-header {
+        font-size: 1.5rem; } }
   .skill__list-proficiency {
     /* wrapper for competency bar */
     position: absolute;
@@ -306,7 +374,12 @@ body {
       font-weight: 600;
       margin-bottom: 0.5rem;
       margin-left: 2rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      font-family: "Montserrat", sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .skill__list-certification--item {
+          padding: 0.5rem 0.75rem;
+          font-size: 0.75rem; } }
 
 .fa-html5 {
   color: #e44d26; }
@@ -564,6 +637,46 @@ body {
       right: 0;
       height: 100%;
     }*/
+.about__header-main {
+  font-family: "Questrial", sans-serif;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase; }
+
+.about__bio {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  border-left: solid 0.25rem white;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #a040a0; }
+
+.about__outland {
+  position: relative;
+  margin: 4rem;
+  text-align: center; }
+  .about__outland-intro {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Questrial", sans-serif;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: purple;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    letter-spacing: 1rem; }
+  .about__outland-logo {
+    padding: 0 4rem;
+    width: 50rem;
+    height: 11rem;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; }
+    .about__outland-logo:hover {
+      transform: scale(1.25); }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

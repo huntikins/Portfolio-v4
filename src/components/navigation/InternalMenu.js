@@ -31,13 +31,13 @@ class InternalMenu extends Component {
               </Link>
             </li>
             <li className="topmenu__list-item topmenu__right">
-              <Link to="/portfolio" className="topmenu__list-item--link">
-                Projects
+              <Link to="/blog" className="topmenu__list-item--link">
+                Blog
               </Link>
             </li>
             <li className="topmenu__list-item topmenu__right">
-              <Link to="/blog" className="topmenu__list-item--link">
-                Blog
+              <Link to="/portfolio" className="topmenu__list-item--link">
+                Projects
               </Link>
             </li>
           </ul>

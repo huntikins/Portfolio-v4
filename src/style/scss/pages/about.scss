@@ -6,3 +6,48 @@
       right: 0;
       height: 100%;
     }*/
+.about {
+  &__header-main {
+    font-family: $header-font;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+  &__bio {
+    font-family: $body-font;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    border-left: solid 0.25rem white;
+    color: white;
+    font-size: 1.25rem;
+    background-color: #a040a0;
+  }
+  &__outland {
+    position: relative;
+    margin: 4rem;
+    text-align: center;
+    &-intro {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $header-font;
+      margin-top: 5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: purple;
+      background-color: rgba($color: white, $alpha: 0.7);
+      padding: 0.5rem 1rem;
+      letter-spacing: 1rem;
+    }
+    &-logo {
+      padding: 0 4rem;
+      width: 50rem;
+      height: 11rem;
+      display: inline-block;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+}

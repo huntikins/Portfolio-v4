@@ -24,7 +24,7 @@ class IconWheel extends React.Component {
             name: "React",
             level: 60,
             certification: {
-              item1: "Advanced"
+              item1: "Intermediate"
             }
           },
           showImage: 0
@@ -108,7 +108,7 @@ class IconWheel extends React.Component {
             name: "SQL",
             level: 65,
             certification: {
-              item1: "Advanced"
+              item1: "Intermediate"
             }
           },
           showImage: 0
@@ -156,7 +156,7 @@ class IconWheel extends React.Component {
             name: "Vue",
             level: 75,
             certification: {
-              item1: "Intermediate"
+              item1: "Advanced"
             }
           },
           showImage: 0

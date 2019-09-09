@@ -1,9 +1,13 @@
 .skill__list {
   @include on-circle($item-count: 14, $circle-size: 40rem, $item-size: 6rem);
-  margin: 4rem auto;
+  margin: 2rem auto;
   border: solid 1rem white;
   position: relative;
   z-index: 1;
+  @include respond(phone) {
+    @include on-circle($item-count: 14, $circle-size: 30rem, $item-size: 4rem);
+    border: solid 0.5rem white;
+  }
   &-image {
     @include absCenter;
     width: 100%;
@@ -22,6 +26,11 @@
     border-radius: 50%;
     background-color: white;
     z-index: 2;
+    @include respond(phone) {
+      width: 4rem;
+      height: 4rem;
+      line-height: 3rem;
+    }
     &--image {
       width: 6rem;
       height: 6rem;
@@ -38,10 +47,17 @@
       position: relative;
       overflow: hidden;
       border: solid 0.5rem purple;
+      @include respond(phone) {
+        width: 4rem;
+        height: 4rem;
+      }
     }
     &:focus {
       transform: scale(2) translateY(-5rem);
       outline: 0px solid transparent;
+      @include respond(phone) {
+        transform: scale(2) translateY(-4.5rem);
+      }
     }
     &--aws {
       border: solid 0.5rem #ff9900;
@@ -88,6 +104,10 @@
     &--icon {
       font-size: 3rem;
       line-height: inherit;
+      @include respond(phone) {
+        font-size: 1.5rem;
+        line-height: inherit;
+      }
     }
   }
   &-info {
@@ -105,10 +125,14 @@
   &-header {
     /* technology type */
     color: white;
+    font-family: $header-font;
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     font-weight: 600;
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
   &-proficiency {
     /* wrapper for competency bar */
@@ -148,6 +172,11 @@
       margin-bottom: 0.5rem;
       margin-left: 2rem;
       margin-right: 2rem;
+      font-family: $body-font;
+      @include respond(phone) {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+      }
     }
   }
 }

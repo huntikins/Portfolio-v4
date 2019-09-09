@@ -46,6 +46,7 @@
   }
 }
 
+//mixin edited from tutorial: https://css-tricks.com/snippets/sass/placing-items-circle/
 @mixin on-circle($item-count, $circle-size, $item-size) {
   position: relative;
   width: $circle-size;
