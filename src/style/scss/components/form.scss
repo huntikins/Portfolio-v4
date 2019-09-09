@@ -1,0 +1,107 @@
+.form {
+  &__group {
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    font-family: $body-font;
+    font-size: 1.5rem;
+    color: inherit;
+    padding: 1rem 2rem;
+    color: $color-primary;
+    border-radius: 2px;
+    background-color: rgba($color-primary-light, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
+    resize: none;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-secondary-dark;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-primary;
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid firebrick;
+    }
+  }
+
+  &__label {
+    font-family: $body-font;
+    color: $color-primary;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+  &__button {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      font-family: $header-font;
+      text-decoration: none;
+      color: $color-white;
+      letter-spacing: 1rem;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      margin-top: 3rem;
+      backface-visibility: hidden;
+      font-size: $default-font-size;
+      background-color: $color-primary;
+      border: none;
+      cursor: pointer;
+      @include respond(tab-port) {
+        @include absCenter;
+        top: auto;
+        margin-top: 4rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  }
+}

@@ -331,7 +331,7 @@ class IconWheel extends React.Component {
         >
           <img
             className="img-responsive skill__list-image"
-            src="./hunterPic.png"
+            src="./images/hunterPic.png"
             alt="Hunter Trammell"
           />
         </li>

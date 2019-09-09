@@ -8,7 +8,7 @@ class HomeHeader extends React.Component {
           <div className="col-md-2 col-sm-12 text-left">
             <img
               className="img-responsive home__image"
-              src="logo.png"
+              src="./images/logo.png"
               alt="..."
             />
           </div>

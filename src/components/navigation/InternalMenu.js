@@ -25,7 +25,7 @@ class InternalMenu extends Component {
               <Link to="/" className="topmenu__list-item">
                 <img
                   className="img-responsive topmenu__list-item--image"
-                  src="logo.png"
+                  src="./images/logo.png"
                   alt="..."
                 />
               </Link>
