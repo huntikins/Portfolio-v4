@@ -2,6 +2,7 @@
   "name": "portfolio-v4",
   "version": "4.0.0",
   "description": "Updated portfolio for Hunter Trammell built using React",
+  "homepage": "https://huntertrammell-portfolio.netlify.com/",
   "main": "index.js",
   "scripts": {
     "cssinit": "node-sass src/style/scss/main.scss src/style/css/style.css -w",
@@ -24,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/huntertrammell/Portfolio-v4.git"
   },
-  "homepage": "https://github.com/huntertrammell/Portfolio-v4.git#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "concat": "^1.0.3",
