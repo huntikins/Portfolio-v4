@@ -2,8 +2,9 @@
 
 Updated portfolio built with Reactjs
 
-Boilerplate used in lieu of create-react-app based from: https://github.com/przemek-nowicki/multi-page-app-with-react.
 Bootstrap grid used for quick style development: https://getbootstrap.com/.
+
+Live Site: https://huntertrammell.netlify.com/
 
 ## Home
 
@@ -11,7 +12,7 @@ Bootstrap grid used for quick style development: https://getbootstrap.com/.
 
 ## About
 
-- All about me, almost like an extreme resume. will cover education/work/skills but also cover personal interests as well as my other projects (i.e. outland publishing & web solutions)
+- All about me, almost like an extreme resume. will cover education/work/skills but also cover personal interests as well as my other projects (i.e. outland publishing & web solutions) - Outland in the IceBox for now
 
 ## Contact
 
@@ -23,7 +24,7 @@ Bootstrap grid used for quick style development: https://getbootstrap.com/.
 
 ## Blog
 
-- Personal blog
+- Personal blog - Under Construction with Gatsby JS
 
 ## Admin
 
