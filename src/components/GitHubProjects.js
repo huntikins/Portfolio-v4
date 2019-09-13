@@ -14,7 +14,6 @@ class GitHub extends React.Component {
         password: process.env.REACT_APP_GITHUB_PASS
       }
     }).then(res => {
-      console.log(res.data);
       this.setState({ repo: res.data });
       //push all repo's with data needed to state, show in a tile list with info from Github
       /*
